@@ -1,0 +1,27 @@
+{
+  "name": "projecost",
+  "version": "1.0.0",
+  "description": "Global Project Cost Calculator",
+  "main": "index.js",
+  "scripts": {
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm run dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "build": "cd frontend && npm run build && cd ../backend && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "project",
+    "cost",
+    "calculator",
+    "freelancer",
+    "agency",
+    "pricing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
